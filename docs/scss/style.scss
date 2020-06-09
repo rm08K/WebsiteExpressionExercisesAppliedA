@@ -1,6 +1,11 @@
 $maintextcolor: #fff;
 $accentcolor: #F60;
 
+a:hover {
+    text-decoration: none;
+    color: $accentcolor;
+}
+
 .minchoFont {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     font-size: 1rem;
@@ -257,11 +262,6 @@ body {
             padding: 9px 23px 7px 22px;
             background-color: #fff;
             border-radius: 20px;
-            text-decoration: none;
-            &:hover {
-                text-decoration: none;
-                color: $accentcolor;
-            }
         }
     }
 }
@@ -287,9 +287,6 @@ body {
             display: block;
             position: relative;
             color: $maintextcolor;
-            &:hover {
-                color: $accentcolor;
-            }
         }
         &_title {
             @extend .gothicFont;
@@ -316,6 +313,10 @@ body {
         display: block;
         width: 720px;
         margin: auto;
+        color: $maintextcolor;
+        &:hover {
+            color: $accentcolor;
+        }
     }
     &-content {
         margin-top: 30px;
@@ -333,5 +334,42 @@ body {
             height: 4.5rem;
             margin: auto;
         }
+    }
+}
+
+.footer {
+    color: $maintextcolor;
+    &-flexbox {
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+    }
+    &-img {
+        width: 30px;
+    }
+    &-title {
+        @extend .gothicFont;
+        font-size: 1rem;
+        height: 1.5rem;
+        font-weight: bold;
+        margin: auto 10px;
+    }
+    &-flexbox2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    &-link {
+        color: $maintextcolor;
+        width: 80px;
+        &:first-child {
+            margin-right: 75px;
+        }
+    }
+    &-copyright {
+        display: block;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 110px;
     }
 }

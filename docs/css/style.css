@@ -1,11 +1,16 @@
 @charset "UTF-8";
+a:hover {
+  text-decoration: none;
+  color: #F60;
+}
+
 .minchoFont, .section2-textbox_detail, .section3-content_detail, .section4-container_detail, .section5-content_detail, .section6-detail, .section6-content_detail {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 1rem;
   line-height: 32px;
 }
 
-.gothicFont, .section1-title, .section2-textbox_title, .section3-title, .section3-content_title, .section4-title, .section4-container_title, .section5-title, .section5-content_title, .section6-title, .section6-subtitle, .section6-content_title, .section6-content_subtitle, .section6-content_link, .section7-title, .section7-content_title, .section8-title, .section8-content_detail {
+.gothicFont, .section1-title, .section2-textbox_title, .section3-title, .section3-content_title, .section4-title, .section4-container_title, .section5-title, .section5-content_title, .section6-title, .section6-subtitle, .section6-content_title, .section6-content_subtitle, .section6-content_link, .section7-title, .section7-content_title, .section8-title, .section8-content_detail, .footer-title {
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: normal;
 }
@@ -281,12 +286,6 @@ body {
   padding: 9px 23px 7px 22px;
   background-color: #fff;
   border-radius: 20px;
-  text-decoration: none;
-}
-
-.section6-content_link:hover {
-  text-decoration: none;
-  color: #F60;
 }
 
 .section7 {
@@ -322,10 +321,6 @@ body {
   color: #fff;
 }
 
-.section7-content_link:hover {
-  color: #F60;
-}
-
 .section7-content_title {
   font-size: 1rem;
   font-weight: bold;
@@ -350,6 +345,11 @@ body {
   display: block;
   width: 720px;
   margin: auto;
+  color: #fff;
+}
+
+.section8-link:hover {
+  color: #F60;
 }
 
 .section8-content {
@@ -371,4 +371,55 @@ body {
   font-size: 1.5rem;
   height: 4.5rem;
   margin: auto;
+}
+
+.footer {
+  color: #fff;
+}
+
+.footer-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 120px;
+}
+
+.footer-img {
+  width: 30px;
+}
+
+.footer-title {
+  font-size: 1rem;
+  height: 1.5rem;
+  font-weight: bold;
+  margin: auto 10px;
+}
+
+.footer-flexbox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.footer-link {
+  color: #fff;
+  width: 80px;
+}
+
+.footer-link:first-child {
+  margin-right: 75px;
+}
+
+.footer-copyright {
+  display: block;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 110px;
 }
