@@ -1,0 +1,374 @@
+@charset "UTF-8";
+.minchoFont, .section2-textbox_detail, .section3-content_detail, .section4-container_detail, .section5-content_detail, .section6-detail, .section6-content_detail {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 1rem;
+  line-height: 32px;
+}
+
+.gothicFont, .section1-title, .section2-textbox_title, .section3-title, .section3-content_title, .section4-title, .section4-container_title, .section5-title, .section5-content_title, .section6-title, .section6-subtitle, .section6-content_title, .section6-content_subtitle, .section6-content_link, .section7-title, .section7-content_title, .section8-title, .section8-content_detail {
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: #170E09;
+}
+
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/Mainimg.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.section1-title {
+  font-size: 36px;
+  font-weight: normal;
+  color: #fff;
+  position: absolute;
+  bottom: 150px;
+  left: 30px;
+}
+
+.section1-logobox {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section1-logobox_svg {
+  width: 162px;
+}
+
+.section1-logobox_title {
+  color: #fff;
+  margin-top: 4px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section2-textbox {
+  width: 680px;
+}
+
+.section2-textbox_title {
+  margin-top: 150px;
+  text-align: center;
+  color: #F60;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+.section2-textbox_detail {
+  color: #fff;
+  width: 430px;
+  margin: 60px auto 12px auto;
+}
+
+.section2-img {
+  display: block;
+  width: calc(100% - 680px);
+}
+
+.section2-img img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section3 {
+  margin-top: 100px;
+}
+
+.section3-title {
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+
+.section3-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section3-content {
+  margin-top: 90px;
+  max-width: 500px;
+}
+
+.section3-content_title {
+  color: #fff;
+  width: 450px;
+  margin: auto;
+  margin-top: 76px;
+  text-align: center;
+}
+
+.section3-content_detail {
+  color: #fff;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.section4 {
+  width: 100%;
+}
+
+.section4-title {
+  color: #fff;
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 80px;
+}
+
+.section4-container {
+  position: relative;
+}
+
+.section4-container_content {
+  width: 900px;
+}
+
+.section4-container_img {
+  display: block;
+  width: 760px;
+  margin: auto;
+}
+
+.section4-container_title {
+  margin-top: 85px;
+  margin-bottom: 35px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.section4-container_detail {
+  color: #fff;
+  width: 840px;
+  margin: auto;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-button-prev {
+  left: 450px;
+  top: 250px;
+}
+
+.swiper-button-next {
+  right: 450px;
+  top: 250px;
+}
+
+.navigation.nextEl {
+  top: 10px;
+}
+
+.section5-title {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.section5-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+}
+
+.section5-content {
+  width: 325px;
+}
+
+.section5-content_img {
+  width: 100%;
+}
+
+.section5-content_title {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.section5-content_detail {
+  color: #fff;
+  line-height: 24px;
+}
+
+.section6 {
+  color: #fff;
+  margin-top: 100px;
+}
+
+.section6-title {
+  text-align: center;
+}
+
+.section6-detail {
+  width: 900px;
+  margin: auto;
+  margin-top: 45px;
+}
+
+.section6-subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.section6-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section6-content {
+  position: relative;
+  width: 650px;
+  background-color: #3D312B;
+  border: 1px solid #F60;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.section6-content_title {
+  margin-top: 50px;
+  margin-left: 95px;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.section6-content_subtitle {
+  margin-left: 95px;
+}
+
+.section6-content_detail {
+  display: block;
+  width: 600px;
+  margin: auto;
+  margin-top: 37px;
+  margin-bottom: 22px;
+}
+
+.section6-content_link {
+  color: #000;
+  font-size: 1rem;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 9px 23px 7px 22px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.section6-content_link:hover {
+  text-decoration: none;
+  color: #F60;
+}
+
+.section7 {
+  color: #fff;
+}
+
+.section7-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.section7-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: calc(375px * 4 + 40px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.section7-content {
+  margin: 5px;
+}
+
+.section7-content_link {
+  display: block;
+  position: relative;
+  color: #fff;
+}
+
+.section7-content_link:hover {
+  color: #F60;
+}
+
+.section7-content_title {
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  bottom: 8px;
+  left: 11px;
+  margin-bottom: 0;
+  text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.section8 {
+  color: #fff;
+}
+
+.section8-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 180px;
+}
+
+.section8-link {
+  display: block;
+  width: 720px;
+  margin: auto;
+}
+
+.section8-content {
+  margin-top: 30px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section8-content_img {
+  margin: 30px 45px;
+  width: 160px;
+}
+
+.section8-content_detail {
+  vertical-align: middle;
+  font-size: 1.5rem;
+  height: 4.5rem;
+  margin: auto;
+}

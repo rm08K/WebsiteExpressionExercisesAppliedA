@@ -1,0 +1,337 @@
+$maintextcolor: #fff;
+$accentcolor: #F60;
+
+.minchoFont {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 1rem;
+    line-height: 32px;
+}
+.gothicFont {
+    font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background-color: #170E09;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/Mainimg.jpg);
+    background-size: cover;
+    position: relative;
+
+    &-title {
+        font-size: 36px;
+        font-weight: normal;
+        color: $maintextcolor;
+        position: absolute;
+        bottom: 150px;
+        left: 30px;
+        @extend .gothicFont;
+    }
+
+    &-logobox {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        display: flex;
+        &_svg {
+            width: 162px;
+        }
+        &_title {
+            color: $maintextcolor;
+            margin-top: 4px;
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+}
+
+.section2 {
+    display: flex;
+    &-textbox {
+        width: 680px;
+        &_title {
+            margin-top: 150px;
+            text-align: center;
+            color: $accentcolor;
+            line-height: 52px;
+            @extend .gothicFont;
+            font-weight: bold;
+        }
+        &_detail {
+            color: $maintextcolor;
+            @extend .minchoFont;
+            width: 430px;
+            margin: 60px auto 12px auto;
+        }
+    }
+    &-img {
+        display: block;
+        width: calc(100% - 680px);
+        & img {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+}
+
+.section3 {
+    margin-top: 100px;
+    &-title {
+        @extend .gothicFont;
+        color: $maintextcolor;
+        font-weight: normal;
+        text-align: center;
+    }
+    &-flexbox {
+        display: flex;
+        justify-content: space-around;
+    }
+    &-content {
+        margin-top: 90px;
+        max-width: 500px;
+        &_title {
+            @extend .gothicFont;
+            color: $maintextcolor;
+            width: 450px;
+            margin: auto;
+            margin-top: 76px;
+            text-align: center;
+        }
+        &_detail {
+            @extend .minchoFont;
+            color: $maintextcolor;
+            margin-top: 60px;
+            text-align: center;
+        }
+    }
+}
+
+.section4 {
+    width: 100%;
+    &-title {
+        @extend .gothicFont;
+        color: $maintextcolor;
+        text-align: center;
+        margin-top: 160px;
+        margin-bottom: 80px;
+    }
+    &-container {
+        position: relative;
+        &_content {
+            width: 900px;
+        }
+        &_img {
+            display: block;
+            width: 760px;
+            margin: auto;
+        }
+        &_title {
+            @extend .gothicFont;
+            margin-top: 85px;
+            margin-bottom: 35px;
+            color: $maintextcolor;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        &_detail {
+            @extend .minchoFont;
+            color: $maintextcolor;
+            width: 840px;
+            margin: auto;
+        }
+    }
+}
+
+.swiper {
+    &-container {
+        width: 100%;
+        height: 100vh;
+    }
+    &-button {
+        &-prev {
+            left: 450px;
+            top: 250px;
+        }
+        &-next {
+            right: 450px;
+            top: 250px;
+        }
+    }
+}
+.navigation.nextEl {
+    top: 10px;
+}
+
+.section5 {
+    &-title {
+        @extend .gothicFont;
+        color: $maintextcolor;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    &-flexbox {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+    &-content {
+        width: 325px;
+        &_img {
+            width: 100%; // 後で修正するかも
+        }
+        &_title {
+            @extend .gothicFont;
+            color: $maintextcolor;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        &_detail {
+            @extend .minchoFont;
+            color: $maintextcolor;
+            line-height: 24px;
+        }
+    }
+}
+
+.section6 {
+    color: $maintextcolor; // こっちの方が行数少なくなって良いかもしれない
+    margin-top: 100px;
+    &-title {
+        @extend .gothicFont;
+        text-align: center;
+    }
+    &-detail {
+        @extend .minchoFont;
+        width: 900px;
+        margin: auto;
+        margin-top: 45px;
+    }
+    &-subtitle {
+        @extend .gothicFont;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 100px;
+    }
+    &-flexbox {
+        display: flex;
+        justify-content: space-around;
+    }
+    &-content {
+        position: relative;
+        width: 650px;
+        background-color: #3D312B;
+        border: 1px solid $accentcolor;
+        border-radius: 10px;
+        margin-top: 80px;
+        &_title {
+            @extend .gothicFont;
+            margin-top: 50px;
+            margin-left: 95px;
+            margin-bottom: 0;
+            font-size: 1.5rem;
+        }
+        &_subtitle {
+            @extend .gothicFont;
+            margin-left: 95px;
+        }
+        &_detail {
+            @extend .minchoFont;
+            display: block;
+            width: 600px;
+            margin: auto;
+            margin-top: 37px;
+            margin-bottom: 22px;
+        }
+        &_link {
+            @extend .gothicFont;
+            color: #000;
+            font-size: 1rem;
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            padding: 9px 23px 7px 22px;
+            background-color: #fff;
+            border-radius: 20px;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                color: $accentcolor;
+            }
+        }
+    }
+}
+
+.section7 {
+    color: $maintextcolor;
+    &-title {
+        @extend .gothicFont;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 160px;
+    }
+    &-flexbox {
+        display: flex;
+        max-width: calc(375px * 4 + 40px);
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+    &-content {
+        margin: 5px;
+        &_link {
+            display: block;
+            position: relative;
+            color: $maintextcolor;
+            &:hover {
+                color: $accentcolor;
+            }
+        }
+        &_title {
+            @extend .gothicFont;
+            font-size: 1rem;
+            font-weight: bold;
+            position: absolute;
+            bottom: 8px;
+            left: 11px;
+            margin-bottom: 0;
+            text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.6);
+        } 
+    }
+}
+
+.section8 {
+    color: $maintextcolor;
+    &-title {
+        @extend .gothicFont;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 180px;
+    }
+    &-link {
+        display: block;
+        width: 720px;
+        margin: auto;
+    }
+    &-content {
+        margin-top: 30px;
+        border: 2px solid $maintextcolor;
+        border-radius: 20px;
+        display: flex;
+        &_img {
+            margin: 30px 45px;
+            width: 160px;
+        }
+        &_detail {
+            @extend .gothicFont;
+            vertical-align: middle;
+            font-size: 1.5rem;
+            height: 4.5rem;
+            margin: auto;
+        }
+    }
+}
