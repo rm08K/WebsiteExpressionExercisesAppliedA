@@ -26,7 +26,16 @@ var mySwiper = new Swiper('.swiper-container', {
         stopOnLast: false,
         disableOnInteraction: true
     },
-    980: {
-        slidesPerView: 1,
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            autoplay: {
+                delay: 2000
+            }
+        },
+        1440: {
+            slidesPerView: 1.5
+        }
     }
 })

@@ -8,6 +8,7 @@ a:hover {
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 1rem;
   line-height: 32px;
+  text-align: justify;
 }
 
 .gothicFont, .section1-title, .section2-textbox_title, .section3-title, .section3-content_title, .section4-title, .section4-container_title, .section5-title, .section5-content_title, .section6-title, .section6-subtitle, .section6-content_title, .section6-content_subtitle, .section6-content_link, .section7-title, .section7-content_title, .section8-title, .section8-content_detail, .footer-title {
@@ -28,12 +29,16 @@ body {
 }
 
 .section1-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: normal;
   color: #fff;
   position: absolute;
   bottom: 150px;
   left: 30px;
+}
+
+.section1-title_br {
+  display: none;
 }
 
 .section1-logobox {
@@ -65,6 +70,7 @@ body {
 
 .section2-textbox {
   width: 680px;
+  margin-bottom: 100px;
 }
 
 .section2-textbox_title {
@@ -84,11 +90,9 @@ body {
 .section2-img {
   display: block;
   width: calc(100% - 680px);
-}
-
-.section2-img img {
-  width: 100%;
-  overflow: hidden;
+  background-image: url(../img/section2-img.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .section3 {
@@ -116,16 +120,19 @@ body {
 
 .section3-content_title {
   color: #fff;
-  width: 450px;
   margin: auto;
   margin-top: 76px;
   text-align: center;
+  line-height: 2rem;
 }
 
 .section3-content_detail {
   color: #fff;
   margin-top: 60px;
-  text-align: center;
+}
+
+.section3-content_img {
+  width: 500px;
 }
 
 .section4 {
@@ -169,16 +176,16 @@ body {
 
 .swiper-container {
   width: 100%;
-  height: 100vh;
+  height: 1000px;
 }
 
 .swiper-button-prev {
-  left: 450px;
+  left: 20%;
   top: 250px;
 }
 
 .swiper-button-next {
-  right: 450px;
+  right: 20%;
   top: 250px;
 }
 
@@ -361,6 +368,10 @@ body {
   display: flex;
 }
 
+.section8-content:hover {
+  border: 2px solid #F60;
+}
+
 .section8-content_img {
   margin: 30px 45px;
   width: 160px;
@@ -422,4 +433,184 @@ body {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 110px;
+}
+
+@media screen and (max-width: 1440px) {
+  .section3-content {
+    max-width: 300px;
+    width: 300px;
+  }
+  .section3-content_img {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .section2-textbox {
+    width: 580px;
+  }
+  .section2-img {
+    width: calc(100% - 580px);
+  }
+  .swiper-button-prev {
+    left: 10%;
+    top: 250px;
+  }
+  .swiper-button-next {
+    right: 10%;
+    top: 250px;
+  }
+  .section6-flexbox {
+    display: block;
+  }
+  .section6-content {
+    margin: auto;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .section1-title {
+    font-size: 1.8rem;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
+  .section5-flexbox {
+    display: block;
+    margin-top: 0;
+  }
+  .section5-content {
+    margin: auto;
+    margin-top: 100px;
+  }
+  .section5-content_imgbox {
+    height: 325px;
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2 {
+    display: block;
+    margin-top: 300px;
+  }
+  .section2-textbox {
+    width: 100%;
+  }
+  .section2-textbox_detail {
+    width: 90%;
+  }
+  .section2-img {
+    margin-top: 200px;
+    width: 100%;
+    height: 56.5vh;
+  }
+  .section3 {
+    margin-top: 200px;
+  }
+  .section3-flexbox {
+    display: block;
+  }
+  .section3-content {
+    max-width: 100%;
+    width: 100%;
+  }
+  .section3-content_detail {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section3-content:nth-child(n + 2) {
+    margin-top: 200px;
+  }
+  .section4-container_img {
+    width: 100%;
+  }
+  .section4-container_detail {
+    width: 95%;
+  }
+  .section6-detail {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .section1-title {
+    font-size: 1rem;
+  }
+  .section1-title_br {
+    display: inline;
+  }
+  .section1-logobox {
+    display: block;
+    top: 20px;
+    right: 14px;
+  }
+  .section1-logobox_svg {
+    margin: auto;
+  }
+  .section1-logobox_title {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .section3-content_detail {
+    margin: auto;
+    margin-top: 60px;
+  }
+  .swiper-container {
+    height: 800px;
+  }
+  .section6-content {
+    width: 100%;
+    text-align: center;
+  }
+  .section6-content_title {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .section6-content_subtitle {
+    margin-left: 0;
+  }
+  .section6-content_detail {
+    width: calc(100% - 50px);
+    margin-top: 37px;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  .section6-content_link {
+    position: relative;
+    display: inline-block;
+    top: auto;
+    right: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .section7-content {
+    margin: 0;
+    width: 100%;
+  }
+  .section7-content_img {
+    width: 100%;
+  }
+  .section8-link {
+    width: calc(100% - 35px);
+  }
+  .section8-content {
+    display: block;
+  }
+  .section8-content_img {
+    display: block;
+    margin: 20px auto 30px auto;
+  }
+  .section8-content_detail {
+    font-size: 1rem;
+    text-align: center;
+  }
 }

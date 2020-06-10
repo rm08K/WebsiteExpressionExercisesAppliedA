@@ -10,6 +10,7 @@ a:hover {
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     font-size: 1rem;
     line-height: 32px;
+    text-align: justify;
 }
 .gothicFont {
     font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -28,13 +29,16 @@ body {
     position: relative;
 
     &-title {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: normal;
         color: $maintextcolor;
         position: absolute;
         bottom: 150px;
         left: 30px;
         @extend .gothicFont;
+        &_br {
+            display: none;
+        }
     }
 
     &-logobox {
@@ -59,6 +63,7 @@ body {
     display: flex;
     &-textbox {
         width: 680px;
+        margin-bottom: 100px;
         &_title {
             margin-top: 150px;
             text-align: center;
@@ -77,10 +82,13 @@ body {
     &-img {
         display: block;
         width: calc(100% - 680px);
-        & img {
-            width: 100%;
-            overflow: hidden;
-        }
+        background-image: url(../img/section2-img.jpg);
+        background-position: center;
+        background-size: cover;
+        // & img {
+        //     width: 100%;
+        //     overflow: hidden;
+        // }
     }
 }
 
@@ -102,16 +110,19 @@ body {
         &_title {
             @extend .gothicFont;
             color: $maintextcolor;
-            width: 450px;
+            // width: 450px;
             margin: auto;
             margin-top: 76px;
             text-align: center;
+            line-height: 2rem;
         }
         &_detail {
             @extend .minchoFont;
             color: $maintextcolor;
             margin-top: 60px;
-            text-align: center;
+        }
+        &_img {
+            width: 500px;
         }
     }
 }
@@ -155,15 +166,15 @@ body {
 .swiper {
     &-container {
         width: 100%;
-        height: 100vh;
+        height: 1000px;
     }
     &-button {
         &-prev {
-            left: 450px;
+            left: 20%;
             top: 250px;
         }
         &-next {
-            right: 450px;
+            right: 20%;
             top: 250px;
         }
     }
@@ -323,6 +334,9 @@ body {
         border: 2px solid $maintextcolor;
         border-radius: 20px;
         display: flex;
+        &:hover {
+            border: 2px solid $accentcolor;
+        }
         &_img {
             margin: 30px 45px;
             width: 160px;
@@ -373,3 +387,5 @@ body {
         margin-bottom: 110px;
     }
 }
+
+@import "responsive";
